@@ -40,7 +40,9 @@ public:
 
         // traverse all components of a graph
         for(int i = 0; i< vertex; i++){
-            bfs(adjList, visited, ans, i);
+            if(!visited[i]){
+                bfs(adjList, visited, ans, i);
+            }
         }
     }
 };
