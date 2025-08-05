@@ -44,5 +44,6 @@ public:
                 bfs(adjList, visited, ans, i);
             }
         }
+        return ans;
     }
 };
